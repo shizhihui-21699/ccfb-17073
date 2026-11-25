@@ -1,0 +1,43 @@
+{
+  "internal_domains": ["contoso.com", "contoso-mail.onmicrosoft.com"],
+  "trusted_forward_domains": ["legal-hold-partner.example", "contoso-archive.example"],
+  "baseline_db": "output/audit_baseline.db",
+  "output_dir": "output",
+  "severity_thresholds": {
+    "low": 10,
+    "medium": 30,
+    "high": 55,
+    "critical": 80
+  },
+  "keyword_groups": {
+    "finance_payment": ["项目A供应商", "contoso付款平台"],
+    "security": ["企业微信登录确认"]
+  },
+  "allowlist": [
+    {
+      "mailbox": "it@contoso.com",
+      "object_type": "rule",
+      "object_id_or_name": "合规归档",
+      "destination": "contoso-archive.example",
+      "reason": "合规团队邮件归档流程，ITSM-20260301",
+      "ticket": "ITSM-20260301",
+      "expires": "2027-01-01"
+    },
+    {
+      "mailbox": "ceo@contoso.com",
+      "object_type": "delegate",
+      "delegate": "ea@contoso.com",
+      "reason": "行政助理长期授权",
+      "ticket": "ITSM-20251120",
+      "expires": ""
+    }
+  ],
+  "alert": {
+    "min_severity": "high",
+    "channels": {
+      "webhook": {"enabled": false, "url": ""},
+      "email": {"enabled": false, "smtp_host": "", "smtp_port": 587, "from": "", "to": []},
+      "syslog": {"enabled": false, "host": "", "port": 514}
+    }
+  }
+}

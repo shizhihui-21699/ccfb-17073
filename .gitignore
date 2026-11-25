@@ -16,3 +16,9 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# 审计运行产物（含敏感邮箱配置）
+output/
+*.db
+samples/*/export/
+*.export/

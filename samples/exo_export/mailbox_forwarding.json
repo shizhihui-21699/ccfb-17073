@@ -1,0 +1,50 @@
+[
+  {
+    "Identity": "finance@contoso.com",
+    "PrimarySmtpAddress": "finance@contoso.com",
+    "ForwardingSmtpAddress": null,
+    "ForwardingAddress": null,
+    "DeliverToMailboxAndForward": true,
+    "HiddenFromAddressListsEnabled": false
+  },
+  {
+    "Identity": "ceo@contoso.com",
+    "PrimarySmtpAddress": "ceo@contoso.com",
+    "ForwardingSmtpAddress": "smtp:ceo.office365@contosο.com",
+    "ForwardingAddress": null,
+    "DeliverToMailboxAndForward": false,
+    "HiddenFromAddressListsEnabled": false
+  },
+  {
+    "Identity": "hr@contoso.com",
+    "PrimarySmtpAddress": "hr@contoso.com",
+    "ForwardingSmtpAddress": null,
+    "ForwardingAddress": null,
+    "DeliverToMailboxAndForward": true,
+    "HiddenFromAddressListsEnabled": false
+  },
+  {
+    "Identity": "it@contoso.com",
+    "PrimarySmtpAddress": "it@contoso.com",
+    "ForwardingSmtpAddress": null,
+    "ForwardingAddress": null,
+    "DeliverToMailboxAndForward": true,
+    "HiddenFromAddressListsEnabled": false
+  },
+  {
+    "Identity": "sales@contoso.com",
+    "PrimarySmtpAddress": "sales@contoso.com",
+    "ForwardingSmtpAddress": null,
+    "ForwardingAddress": null,
+    "DeliverToMailboxAndForward": true,
+    "HiddenFromAddressListsEnabled": false
+  },
+  {
+    "Identity": "boss@contoso.com",
+    "PrimarySmtpAddress": "boss@contoso.com",
+    "ForwardingSmtpAddress": null,
+    "ForwardingAddress": null,
+    "DeliverToMailboxAndForward": true,
+    "HiddenFromAddressListsEnabled": false
+  }
+]

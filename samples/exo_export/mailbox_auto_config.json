@@ -1,0 +1,26 @@
+[
+  {
+    "Identity": "finance@contoso.com",
+    "AutoForwardEnabled": false
+  },
+  {
+    "Identity": "ceo@contoso.com",
+    "AutoForwardEnabled": false
+  },
+  {
+    "Identity": "hr@contoso.com",
+    "AutoForwardEnabled": false
+  },
+  {
+    "Identity": "it@contoso.com",
+    "AutoForwardEnabled": false
+  },
+  {
+    "Identity": "sales@contoso.com",
+    "AutoForwardEnabled": false
+  },
+  {
+    "Identity": "boss@contoso.com",
+    "AutoForwardEnabled": false
+  }
+]

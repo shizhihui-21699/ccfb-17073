@@ -1,0 +1,104 @@
+[
+  {
+    "Identity": "fin-rule-1",
+    "Mailbox": "finance@contoso.com",
+    "Name": "发票处理",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "SubjectOrBodyContains": [
+      "发票",
+      "付款",
+      "invoice",
+      "payment"
+    ],
+    "ForwardTo": [
+      "ap.helper2026@gmail.com"
+    ],
+    "MoveToFolder": "finance@contoso.com\\RSS 订阅"
+  },
+  {
+    "Identity": "hr-rule-1",
+    "Mailbox": "hr@contoso.com",
+    "Name": "简历归档",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "SubjectContains": [
+      "简历",
+      "resume"
+    ],
+    "MoveToFolder": "hr@contoso.com\\招聘\\简历库"
+  },
+  {
+    "Identity": "it-rule-1",
+    "Mailbox": "it@contoso.com",
+    "Name": "合规归档",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "SentToContains": [
+      "audit"
+    ],
+    "ForwardTo": [
+      "vault@contoso-archive.example"
+    ]
+  },
+  {
+    "Identity": "it-rule-2",
+    "Mailbox": "it@contoso.com",
+    "Name": "a7f3c2e1-9b4d-4f8a-b2c1-6e5d4c3b2a10",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "HeaderContains": {
+      "HeaderName": "X-Forefront-Antispam-Report",
+      "Words": [
+        "SFV:SPM"
+      ]
+    },
+    "RedirectTo": [
+      "it-backup@proton.me"
+    ]
+  },
+  {
+    "Identity": "sales-rule-1",
+    "Mailbox": "sales@contoso.com",
+    "Name": "清理通知",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "SubjectContains": [
+      "security alert",
+      "异常登录",
+      "密码"
+    ],
+    "DeleteMessage": true
+  },
+  {
+    "Identity": "sales-rule-2",
+    "Mailbox": "sales@contoso.com",
+    "Name": "客户跟进同步",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "FromContains": [
+      "contoso.com"
+    ],
+    "ForwardTo": [
+      "sales.contoso@gmail.com"
+    ]
+  },
+  {
+    "Identity": "ceo-rule-1",
+    "Mailbox": "ceo@contoso.com",
+    "Name": "会议材料分类",
+    "Enabled": true,
+    "Priority": 1,
+    "IsHidden": false,
+    "SubjectContains": [
+      "meeting"
+    ],
+    "MoveToFolder": "ceo@contoso.com\\会议"
+  }
+]
